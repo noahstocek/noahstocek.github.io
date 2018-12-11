@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=auto, initial-scale=1">
+<title>Noah Stocek</title>
+
 <style>
 * {box-sizing: border-box}
 
@@ -52,6 +54,7 @@ width:650px;
 #About {background-color: white;}
 #Research {background-color: white;}
 #CV {background-color: white;}
+#EasterEgg {background-color: white;}
 
 </style>
 </head>
@@ -62,12 +65,17 @@ width:650px;
 <button class="tablink" onclick="openPage('CV', this, 'green')">CV</button>
 
 
+<div id=EasterEgg class="tabcontent">
+
+</div>
+
 <div id="About" class="tabcontent">
 
   <center>
   <h1 style="color:blue">Welcome!</h1>
   </center>
 
+<div>
 <div class=wholeabt>
   <div class=abtleft>
   <p>Welcome to my website. My name is Noah Stocek and I am a fourth year physics honours student
@@ -79,8 +87,25 @@ width:650px;
 </div>
 
   <div class=abtright>
-    <img src=UNBLogo.jpg>
+    <button onclick="openPage('EasterEgg', this, 'powderblue')">
+    <img src=ProfilePic.jpg
+    style="width:378px;height:504px;">
+  </button>
   </div>
+</div>
+
+<div class=wholeabt>
+<div class=leftabt>
+<img src=UNBLogo.jpg >
+</div>
+<div class=rightabt>
+<img src=ClubLogo.jpg
+style="width:200px;height:200px">
+</div>
+</div>
+
+</div>
+
 
 </div>
 
@@ -164,6 +189,8 @@ width:650px;
     <p><b>President-Physics and Astronomy Club</b><br>
       September 2018-April 2019</p>
 </div>
+
+
 
 
 
