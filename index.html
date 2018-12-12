@@ -42,6 +42,11 @@ body, html {
   margin: 10px;
 }
 
+.abtleftright{
+  float:left;
+  margin: 400px;
+}
+
 .abtright{
   float:right;
   margin: 10px;
@@ -82,7 +87,8 @@ width:650px;
   at the University of New Brunswick. I am currently the president of the Physics and Astronomy Club
   at UNB. On this website you can read about the research that I have done so far, the research that
   I am working on, and my qualifications/ experience/personal information. This information can be found
-  under the research and CV tabs respectively.</p>
+  under the research and CV tabs respectively. Feel free to email me with any suggestions on improving
+  this website, my email address can be found under "Personal Information" in the CV tab.</p>
   </div>
 </div>
 
@@ -94,13 +100,12 @@ width:650px;
   </div>
 </div>
 
-<div class=wholeabt>
+<div>
 <div class=leftabt>
 <img src=UNBLogo.jpg >
-</div>
-<div class=rightabt>
+
 <img src=ClubLogo.jpg
-style="width:200px;height:200px">
+style="width:225px;height:225px">
 </div>
 </div>
 
@@ -117,31 +122,59 @@ style="width:200px;height:200px">
   </center>
 
 <div>
-  <h3>September 2018-April 2019<h3>
+  <h2><u>September 2018-April 2019</u></h2>
 </div>
 
 <div>
-  <p>Undergraduate honours project in UNB's MRI lab. Supervised by Dr. Ben Newling.</p>
+  <h4>Undergraduate honours project in UNB's MRI lab. Supervised by Dr. Ben Newling.</h4>
+  <p>Project involves measuring bulk flow propagators of flowing sample (water doped
+     with copper sulfate) using the well documented DIFFTRAIN pulse sequence approach.
+     In this work we are keeping our pulse durations short (on the order of hundreds
+     of microseconds) and constant throughout the measurement. This short time parameter technique has been proven
+     in other settings to minimize imaging artefacts associated with the time development of
+     NMR signals, and we are expecting to obtain similar results for the measurement of bulk flow
+     propagators. We are also planning on reorganizing the bipolar gradient switches from how
+     they are traditionally applied in order to minimize the amount of work that our gradient
+     coils must do, which will in turn help us ensure we are measuring the centre of k-space on each
+     bipolar gradient switch. One bit of new physics that we are hoping to uncover with this work
+     is a sense of the time development of bulk flow propagators. By increasing the time of our pulse
+     durations we will be able to see this, and are expecting our propagators to change with these
+     pulse durations.</p>
 </div>
 
 <div>
-  <h3>Summer 2018<h3>
+  <h2><u>Summer 2018</u></h2>
 </div>
 
 <div>
-  <p>Worked as research assistant in UNB's MRI lab under Dr. Ben Newling. Work included
-  writing code to automate measurement and helping with motion encoding imaging experiment
-  on turbulent system.</p>
+  <h4>Research assistant in UNB's MRI. Supervised by Dr. Ben Newling. </h4>
+  <p>Work included writing code in visual basic on TNMR software to automate calculation of a timing
+     parameter that we have called <i>Time Shift Trim</i> (TST). Due to the unavoidable self inductance in
+     gradient coils, they tend to slightly resist being switched to apply a new value (a necessary function
+     in all MRI experiments). Due to this, our motion encoding gradient does not cross 0 at the exact time
+     that we think it does, and thus we end up inadvertantly applying our radio frequency pulse at the
+     wrong time, and effectively don't measure the centre of k-space. The centre of k-space contains the
+     largest signal of our entire conjugate space and by missing this we lose valuable information about our system.
+     By adding this adjustable TST parameter before our RF pulse we can delay it so that we apply it at the
+     exact right time and measure the things we mean to measure. The one draw back is that the TST parameter
+     can be very tedious and time consuming to determine, and depends on many specific parameters of the
+     experiment being done. Therefore I developped a program to determine and set this time parameter quickly
+     and efficiently, making this process much easier for the experimenter. I then helped with diffusion tensor
+     imaging experiments on turbulent systems in an effort to measure the time scales on which turbulent flow
+     is anisotropic.</p>
 </div>
 
 <div>
-  <h3>Summer 2016<h3>
+  <h2><u>Summer 2016</u></h2>
 </div>
 
 <div>
-  <p>Worked as research assistant in biomedical engineering lab at Dalhousie University.
-  Worked on assembling equipment, mixing bone glue samples, and testing strength of
-  bone glues.</p>
+  <h4>Research assistant in Biomedical Engineering lab at Dalhousie University.</h2>
+  <p>Work involved mixing bone glue samples made of various polymers in an attempt to find a mixture
+     with the right properties that could be successfully inserted in a broken bone to help speed up healing.
+     In order to do this, I helped assemble equipment to melt and mix different polymers into a sample. These would
+     then be spread on bone samples which would be glued together. Once dried we would test the strength and
+     hydrophobicity of the glue.</p>
 </div>
 
 
@@ -151,7 +184,7 @@ style="width:200px;height:200px">
 <div id="CV" class="tabcontent">
 
 <div>
-  <h3>Personal Information</h3>
+  <h3><u>Personal Information</u></h3>
 </div>
 
 <div>
@@ -161,14 +194,14 @@ style="width:200px;height:200px">
 </div>
 
 <div>
-  <h3>Education</h3>
+  <h3><u>Education</u></h3>
 
   <p><b>BSc.Physics (In 4th and final year)</b><br>
   University of New Brunswick</p>
 </div>
 
 <div>
-  <h3>Work Experience</h3>
+  <h3><u>Work Experience</u></h3>
 
   <p><b>Research Assistant at UNB</b><br>
   Summer 2018</p>
@@ -181,7 +214,7 @@ style="width:200px;height:200px">
 </div>
 
 <div>
-  <h3>Extracurriculars</h3>
+  <h3><u>Extracurriculars</u></h3>
 
   <p><b>Secretary-Physics and Astronomy Club</b><br>
     September 2017-April 2018
