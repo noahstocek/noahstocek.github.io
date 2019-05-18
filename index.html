@@ -60,6 +60,7 @@ width:650px;
 #Research {background-color: white;}
 #CV {background-color: white;}
 #EasterEgg {background-color: white;}
+#HonoursThesis {background-color: white;}
 
 </style>
 </head>
@@ -74,6 +75,11 @@ width:650px;
 
 </div>
 
+<div id=HonoursThesis class="tabcontent">
+<object width="1300" height="600" data="StocekHonoursThesis.pdf"></object>
+</div>
+
+
 <div id="About" class="tabcontent">
 
   <center>
@@ -83,17 +89,19 @@ width:650px;
 <div>
 <div class=wholeabt>
   <div class=abtleft>
-  <p>Welcome to my website. My name is Noah Stocek and I am a fourth year physics honours student
-  at the University of New Brunswick. I am currently the president of the Physics and Astronomy Club
-  at UNB. On this website you can read about the research that I have done so far, the research that
-  I am working on, and my qualifications/ experience/personal information. This information can be found
-  under the research and CV tabs respectively. Feel free to email me with any suggestions on improving
+  <p>Welcome to my website. My name is Noah Stocek and I am a graduate of the University of New Brunswick
+  with an honours in physics, and a minor in mathematics. I am currently a research assistant at the University
+  of Western Ontario, where I will be starting my master's in solid state physics in September.
+  On this website you can read about the research that I have done so far, the research that
+  I am working on, and my qualifications/experience/personal information. This information can be found
+  under the Research and CV tabs respectively. Feel free to email me with any suggestions on improving
   this website, my email address can be found under "Personal Information" in the CV tab.</p>
   </div>
 </div>
 
-  <div class=abtright>
-    <button onclick="openPage('EasterEgg', this, 'powderblue')">
+  <div align="right">
+
+    <button onclick="openPage('EasterEgg', this)">
     <img src=ProfilePic.jpg
     style="width:378px;height:504px;">
   </button>
@@ -104,8 +112,10 @@ width:650px;
 <div class=leftabt>
 <img src=UNBLogo.jpg >
 
-<img src=ClubLogo.jpg
+
+<img src=WesternLogo.jpg
 style="width:225px;height:225px">
+
 </div>
 </div>
 
@@ -121,25 +131,38 @@ style="width:225px;height:225px">
   <h1 style="color:powderblue">Past and Ongoing Research</h1>
   </center>
 
+  <div>
+    <h2><u>Summer 2019</u></h2>
+  </div>
+
+  <div>
+    <h4>Research assistant at University of Western Ontario.</h2>
+    <p>Information to come :-).</p>
+  </div>
+
+
 <div>
   <h2><u>September 2018-April 2019</u></h2>
 </div>
 
 <div>
   <h4>Undergraduate honours project in UNB's MRI lab. Supervised by Dr. Ben Newling.</h4>
-  <p>Project involves measuring bulk flow propagators of flowing sample (water doped
-     with copper sulfate) using the well documented DIFFTRAIN pulse sequence approach.
-     In this work we are keeping our pulse durations short (on the order of hundreds
-     of microseconds) and constant throughout the measurement. This short time parameter technique has been proven
-     in other settings to minimize imaging artefacts associated with the time development of
-     NMR signals, and we are expecting to obtain similar results for the measurement of bulk flow
-     propagators. We are also planning on reorganizing the bipolar gradient switches from how
+  <p>Project involved measuring bulk flow propagators of flowing sample (water)
+     using a modification of the well documented DIFFTRAIN pulse sequence approach.
+     In this work we kept our pulse durations short (on the order of hundreds
+     of microseconds), equal to our recycle time, and constant throughout the measurement.
+     To do this,  a small tip angle (9.5 degrees) was used.
+      We also reorganized the bipolar gradient switches from how
      they are traditionally applied in order to minimize the amount of work that our gradient
      coils must do, which will in turn help us ensure we are measuring the centre of k-space on each
      bipolar gradient switch. One bit of new physics that we are hoping to uncover with this work
      is a sense of the time development of bulk flow propagators. By increasing the time of our pulse
      durations we will be able to see this, and are expecting our propagators to change with these
-     pulse durations.</p>
+     pulse durations. This thesis can be viewed (and even downloaded should you desire) by clicking
+     the thesis button below.</p>
+     <button onclick="openPage('HonoursThesis', this, 'powderblue')">
+      Thesis
+     </button>
 </div>
 
 <div>
@@ -147,7 +170,7 @@ style="width:225px;height:225px">
 </div>
 
 <div>
-  <h4>Research assistant in UNB's MRI. Supervised by Dr. Ben Newling. </h4>
+  <h4>Research assistant in UNB's MRI lab. Supervised by Dr. Ben Newling. </h4>
   <p>Work included writing code in visual basic on TNMR software to automate calculation of a timing
      parameter that we have called <i>Time Shift Trim</i> (TST). Due to the unavoidable self inductance in
      gradient coils, they tend to slightly resist being switched to apply a new value (a necessary function
@@ -189,14 +212,14 @@ style="width:225px;height:225px">
 
 <div>
   <p>Birthday: December 7, 1997<br>
-  Address: 515 Dundonald St, Fredericton, New Brunswick <br>
-  Email: nstocek@unb.ca</p>
+  Address: 941 Wonderland Rd S, London, Ontario <br>
+  Email: nstocek@uwo.ca</p>
 </div>
 
 <div>
   <h3><u>Education</u></h3>
 
-  <p><b>BSc.Physics (In 4th and final year)</b><br>
+  <p><b>BSc Physics (Hons)</b><br>
   University of New Brunswick</p>
 </div>
 
