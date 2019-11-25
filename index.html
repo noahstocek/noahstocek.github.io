@@ -14,8 +14,8 @@ body, html {
 }
 
 .tablink {
-    background-color: white;
-    color: black;
+    background-color: #4F2683;
+    color: white;
     float: left;
     border: none;
     outline: none;
@@ -26,8 +26,8 @@ body, html {
 }
 
 .tablink:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: #4F2683;
 }
 
 .tabcontent {
@@ -56,19 +56,61 @@ body, html {
 width:650px;
 }
 
-#About {background-color: white;}
-#Research {background-color: white;}
-#CV {background-color: white;}
+.border1{
+    border-radius: 15px;
+    background: white;
+    padding: 20px;
+    width: 1000px;
+    height: 120px;
+}
+
+.border2{
+    border-radius: 15px;
+    background: white;
+    padding: 20px;
+    width: 1000px;
+    height: 240px;
+}
+
+.border3{
+    border-radius: 15px;
+    background: white;
+    padding: 20px;
+    width: 1000px;
+    height: 150px;
+}
+
+.border4{
+    border-radius: 15px;
+    background: white;
+    padding: 20px;
+    width: 1000px;
+    height: 300px;
+}
+
+.border5{
+    border-radius: 15px;
+    background: white;
+    padding: 20px;
+    width: 1000px;
+    height: 200px;
+}
+
+#About {background-color: #807F83;}
+#Research {background-color: #807F83;}
+#CV {background-color: #807F83;}
 #EasterEgg {background-color: white;}
-#HonoursThesis {background-color: white;}
+#HonoursThesis {background-color: #807F83;}
 
 </style>
 </head>
 <body>
 
-<button class="tablink" onclick="openPage('About', this, 'blue')" id="defaultOpen">About</button>
-<button class="tablink" onclick="openPage('Research', this, 'powderblue')">Research</button>
-<button class="tablink" onclick="openPage('CV', this, 'green')">CV</button>
+  <div>
+  <button class="tablink" onclick="openPage('About', this, '#807F83')" id="defaultOpen">About</button>
+  <button class="tablink" onclick="openPage('Research', this, '#807F83')">Research</button>
+  <button class="tablink" onclick="openPage('CV', this, '#807F83')">CV</button>
+  </div>
 
 
 <div id=EasterEgg class="tabcontent">
@@ -83,19 +125,20 @@ width:650px;
 <div id="About" class="tabcontent">
 
   <center>
-  <h1 style="color:blue">Welcome!</h1>
+  <h1 style="color:#4F2683">Welcome!</h1>
   </center>
 
 <div>
 <div class=wholeabt>
-  <div class=abtleft>
-  <p>Welcome to my website. My name is Noah Stocek and I am a graduate of the University of New Brunswick
-  with an honours in physics, and a minor in mathematics. I am currently a research assistant at the University
-  of Western Ontario, where I will be starting my master's in solid state physics in September.
-  On this website you can read about the research that I have done so far, the research that
-  I am working on, and my qualifications/experience/personal information. This information can be found
-  under the Research and CV tabs respectively. Feel free to email me with any suggestions on improving
-  this website, my email address can be found under "Personal Information" in the CV tab.</p>
+  <div class=abtleft> <font size="5">
+  <p>Welcome to my website! My name is Noah Stocek and I am a graduate of the University of New Brunswick
+  with an honours in physics, and a minor in mathematics. I am currently a Master's student in the
+  Department of Physics and Astronomy at the University of Western Ontario (UWO) being supervised by Dr. Giovanni Fanchini.
+  On this website you can read about the research that I have done so far,
+  the research that I am working on, and my qualifications/experience/personal information. This
+  information can be found under the Research and CV tabs respectively. Feel free to email me with any
+  suggestions on improving this website, my email address can be found under "Personal Information"
+  in the CV tab.</p> </font>
   </div>
 </div>
 
@@ -128,14 +171,13 @@ style="width:225px;height:225px">
 <div id="Research" class="tabcontent">
 
   <center>
-  <h1 style="color:powderblue">Past and Ongoing Research</h1>
-  </center>
+  <h1 style="color:#4F2683">Past and Ongoing Research</h1>
 
   <div>
-    <h2><u>September 2019-</u></h2>
+    <h2><font color="white"><u>September 2019-</u></font></h2>
   </div>
 
-  <div>
+  <div class="border5">
     <h4>Master's at University of Western Ontario.</h2>
     <p>The topic of my Master's work has been a continuation of the summer work listed below, on the photo-CELIV experiment.
       The main goal is to adapt this experiment to low temperatures, in order to measure charge carrier mobility
@@ -144,10 +186,10 @@ style="width:225px;height:225px">
   </div>
 
   <div>
-    <h2><u>Summer 2019</u></h2>
+    <h2><font color="white"><u>Summer 2019</u></font></h2>
   </div>
 
-  <div>
+  <div class="border5">
     <h4>Research assistant at University of Western Ontario.</h2>
     <p>Worked on developping the Charge Extraction by Linearly Increasing Voltage (CELIV) experiment. This is a
       very powerful and easy technique for studying the internal properties of semiconductors, specifically the
@@ -158,10 +200,10 @@ style="width:225px;height:225px">
 
 
 <div>
-  <h2><u>September 2018-April 2019</u></h2>
+  <h2><font color="white"><u>September 2018-April 2019</u></font></h2>
 </div>
 
-<div>
+<div class="border4">
   <h4>Undergraduate honours project in UNB's MRI lab. Supervised by Dr. Ben Newling.</h4>
   <p>Project involved measuring bulk flow propagators of flowing sample (water)
      using a modification of the well documented DIFFTRAIN pulse sequence approach.
@@ -182,10 +224,10 @@ style="width:225px;height:225px">
 </div>
 
 <div>
-  <h2><u>Summer 2018</u></h2>
+  <h2><font color="white"><u>Summer 2018</u></font></h2>
 </div>
 
-<div>
+<div class="border4">
   <h4>Research assistant in UNB's MRI lab. Supervised by Dr. Ben Newling. </h4>
   <p>Work included writing code in visual basic on TNMR software to automate calculation of a timing
      parameter that we have called <i>Time Shift Trim</i> (TST). Due to the unavoidable self inductance in
@@ -204,10 +246,10 @@ style="width:225px;height:225px">
 </div>
 
 <div>
-  <h2><u>Summer 2016</u></h2>
+  <h2><font color="white"><u>Summer 2016</u></font></h2>
 </div>
 
-<div>
+<div class="border5">
   <h4>Research assistant in Biomedical Engineering lab at Dalhousie University.</h2>
   <p>Work involved mixing bone glue samples made of various polymers in an attempt to find a mixture
      with the right properties that could be successfully inserted in a broken bone to help speed up healing.
@@ -216,32 +258,53 @@ style="width:225px;height:225px">
      hydrophobicity of the glue.</p>
 </div>
 
-
+</center>
 </div>
 
 
 <div id="CV" class="tabcontent">
 
 <div>
-  <h3><u>Personal Information</u></h3>
+  <center>
+  <h3><u><font color="white">Personal Information</u></font></h3>
+  </center>
 </div>
 
-<div>
+<center>
+<div class="border1">
+  <center>
   <p>Birthday: December 7, 1997<br>
   Address: 941 Wonderland Rd S, London, Ontario <br>
   Email: nstocek@uwo.ca</p>
+</center>
 </div>
+</center>
+
 
 <div>
-  <h3><u>Education</u></h3>
+  <center>
+  <h3><font color="white"><u>Education</u></font></h3>
+  </center>
+</div>
 
+<center>
+<div class="border1">
+  <center>
   <p><b>BSc Physics (Hons)</b><br>
   University of New Brunswick</p>
+</center>
 </div>
+</center>
 
 <div>
-  <h3><u>Work Experience</u></h3>
+  <center>
+  <h3><font color="white"><u>Work Experience</u></font></h3>
+  </center>
+</div>
 
+<center>
+<div class="border2">
+  <center>
   <p><b>Research Assistant at UWO</b><br>
   Summer 2019</p>
 
@@ -253,17 +316,27 @@ style="width:225px;height:225px">
 
   <p><b>Research Assistant at Dalhousie University</b><br>
   Summer 2016</p>
+</center>
 </div>
+</center>
 
 <div>
-  <h3><u>Extracurriculars</u></h3>
+  <center>
+  <h3><font color="white"><u>Extracurriculars</u></font></h3>
+  </center>
+</div>
 
+<center>
+<div class="border3">
+  <center>
   <p><b>Secretary-Physics and Astronomy Club</b><br>
     September 2017-April 2018
 
     <p><b>President-Physics and Astronomy Club</b><br>
       September 2018-April 2019</p>
+    </center>
 </div>
+</center>
 
 
 
