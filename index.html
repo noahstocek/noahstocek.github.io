@@ -10,7 +10,46 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial;
+    margin-top: -11px;
+    font-family: FontAwesome;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.7;
+  margin: 0px;
+  padding: 0;
+  color: inherit;
+}
+
+
+.container {
+    background-color: #4F2683;
+    width: 100%;
+    height: 280px;
+    padding: 10px;
+    position: relative;
+
+}
+
+.title{
+  margin-top: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+  margin-left: 30%;
+  width: 40%;
+  border-bottom: 1px solid #eee;
+}
+
+.titlepic{
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+  margin-left: 30%;
+  width: 40%;
 }
 
 .tablink {
@@ -20,146 +59,222 @@ body, html {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 33.33%;
+    padding: 22px 18px;
+    font-size: 20px;
+    height: auto;
 }
 
 .tablink:hover {
-    background-color: white;
-    color: #4F2683;
+    background-color: #4F2683;
+    color: #807F83;
+}
+
+
+.tabtitle{
+  text-align: center;
+  color: #4F2683;
+  background-color: #807F83;
+  margin-right: -20px;
+  margin-left: -20px;
+  margin-top: -20px;
 }
 
 .tabcontent {
     color: black;
     display: none;
-    padding: 100px 20px;
+    padding: 20px 20px;
+    margin-top: 300px
     height: auto;
+}
+
+
+.picleft{
+  float: left;
+  margin-left: 10px;
+  margin-top: 35px;
+}
+
+.picright{
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
 }
 
 .abtleft{
   float:left;
-  margin: 10px;
+  margin-top: 30px;
+  width: 66%;
 }
 
-.abtleftright{
-  float:left;
-  margin: 400px;
+
+.abtrightcont{
+  float:right;
+  margin: -10px;
+  margin-right: 10px;
 }
 
 .abtright{
   float:right;
   margin: 10px;
+  margin-right: 10px;
 }
 
 .wholeabt{
-width:650px;
+width:100%;
 }
 
-.border1{
-    border-radius: 15px;
-    background: white;
-    padding: 20px;
-    width: 1000px;
-    height: 120px;
+.hometext{
+  margin-top: -5px;
+  width: auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-indent: 25px;
 }
 
-.border2{
-    border-radius: 15px;
-    background: white;
-    padding: 20px;
-    width: 1000px;
-    height: 240px;
+.rsrchdate{
+  color: #4F2683;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.border3{
-    border-radius: 15px;
-    background: white;
-    padding: 20px;
-    width: 1000px;
-    height: 150px;
+.rschpos{
+  color: #4F2683;
+  text-align: center;
+  margin-top: 0px;
+
 }
 
-.border4{
-    border-radius: 15px;
-    background: white;
-    padding: 20px;
-    width: 1000px;
-    height: 300px;
+.rschdesc{
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  border-bottom: 1px solid #807F83;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-indent: 25px;
 }
 
-.border5{
-    border-radius: 15px;
-    background: white;
-    padding: 20px;
-    width: 1000px;
-    height: 200px;
+.cvgrouptitlefirst{
+  color: #4F2683;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
 }
 
-#About {background-color: #807F83;}
-#Research {background-color: #807F83;}
-#CV {background-color: #807F83;}
-#EasterEgg {background-color: white;}
+.cvgrouptitle{
+  color: #4F2683;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.cvgroup{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cventrysing{
+  text-align: center;
+  margin-top: -15px;
+  /*font-weight: bold; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.cventry{
+  text-align: center;
+  margin-top: -5px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.cventrysub{
+  text-align: center;
+  margin-top: -20px;
+  font-style: italic;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.cvleft{
+  float:left;
+  margin-top: 0px;
+  width: 50%;
+}
+
+.cvright{
+  float:right;
+  margin-top: 0px;
+  width: 50%;
+}
+
+
+#Home {background-color: white;}
+#Research {background-color: white;}
+#CV {background-color: white;}
 #HonoursThesis {background-color: #807F83;}
 
 </style>
 </head>
 <body>
 
-  <div>
-  <button class="tablink" onclick="openPage('About', this, '#807F83')" id="defaultOpen">About</button>
-  <button class="tablink" onclick="openPage('Research', this, '#807F83')">Research</button>
-  <button class="tablink" onclick="openPage('CV', this, '#807F83')">CV</button>
+  <div class="container">
+  <div class="picleft">
+    <img src=map.png style="width:200px;">
   </div>
-
-
-<div id=EasterEgg class="tabcontent">
-
-
-</div>
+  <div class="title">
+    <h1> Noah Stocek </h1>
+    <h5> PhD candidate, University of Western Ontario </h5>
+  </div>
+  <div class="titlepic">
+    <img src=West_Sci.png style="width:200px;">
+  </div>
+  <nav class="abtrightcont">
+    <button class="tablink" onclick="openPage('Home', this, '#4F2683')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('Research', this, '#4F2683')">Research</button>
+    <button class="tablink" onclick="openPage('CV', this, '#4F2683')">CV</button>
+  </nav>
+  </div>
 
 <div id=HonoursThesis class="tabcontent">
 <object width="1300" height="600" data="StocekHonoursThesis.pdf"></object>
 </div>
 
 
-<div id="About" class="tabcontent">
+<div id="Home" class="tabcontent">
 
-  <center>
-  <h1 style="color:#4F2683">Welcome!</h1>
-  </center>
+
+  <div class="tabtitle">
+  <h1>Home</h1>
+  </div>
 
 <div>
 <div class=wholeabt>
-  <div class=abtleft> <font size="5">
-  <p>Welcome to my website! My name is Noah Stocek and I am a PhD student in physics at the University of Western Ontario
-  (UWO) under ths supervision of Dr. Giovanni Fanchini. I received my undergraduate degree from the University of New Brunswick
-  with an honours in physics, and a minor in mathematics. On this website you can read about the research that I have done so far,
-  the research that I am working on, and my qualifications/experience/personal information. This
-  information can be found under the Research and CV tabs respectively. Feel free to email me with any
-  suggestions on improving this website, my email address can be found under "Personal Information"
-  in the CV tab.</p> </font>
+  <div class="abtleft"> <font size="4.5">
+  <center class="hometext"> <h3> About </h3></center>
+  <p class="hometext">I am currently a PhD student in experimental condensed matter physics at the University of Western Ontario under
+  the supervision of Dr. Giovanni Fanchini. I completed my Bachelor of Science with honors in physics and a minor
+  in mathematics at the University of New Brunswick in 2019. After that I began my Master of Science in physics at the
+  University of Western Ontario, and in September 2020 reclassified into the PhD program. </p>
+
+  <center class="hometext"> <h3> Research </h3></center>
+  <p class="hometext"> My research is focused on materials with applications to solar energy. My current interest is specifically in
+  synthesis and characterization of novel carbon based two-dimensional materials with anticipated opto-electronic properties
+  that would be ideal in photovoltaic devices. To improve industrial viability of such materials, I focus on developping
+  reaction chambers specifically designed for large scale deposition of high quality multi-layer and single-layer stacks,
+  that also allow for fine control of deposition parameters.</p>
+
+  <p class="hometext"> My previous research within condensed matter physics involved current transient measurements for
+  photo-induced charge-carrier mobility determination in photovoltaics. Specifically via photo-induced charge extraction
+  by linearly increasing voltage (photo-CELIV), and extending this single-point measurement into a cross-sectional imaging
+  technique for spatially resolved mobility measurements. This type of measurement will eventually be incorporated into
+  my ongoing research.</p>
+
+  </font>
   </div>
-</div>
 
-  <div align="right">
-
-    <button onclick="openPage('EasterEgg', this)">
+  <div class=abtright>
     <img src=ProfilePic.jpg
     style="width:378px;height:504px;">
-  </button>
   </div>
-</div>
 
-<div>
-<div class=leftabt>
-<img src=UNBLogo.jpg >
-
-
-<img src=WesternLogo.jpg
-style="width:225px;height:225px">
-
-</div>
+  </div>
 </div>
 
 </div>
@@ -170,173 +285,205 @@ style="width:225px;height:225px">
 
 <div id="Research" class="tabcontent">
 
-  <center>
-  <h1 style="color:#4F2683">Past and Ongoing Research</h1>
-
-  <div>
-    <h2><font color="white"><u>September 2019-September 2020</u></font></h2>
+  <div class="tabtitle">
+  <h1>Research</h1>
   </div>
 
-  <div class="border5">
-    <h4>Master's at University of Western Ontario.</h2>
-    <p>My Master's work involved extending the photogenerated charge carrier by linearly increasing voltage
-    (photo-CELIV) mobility measurement technique in order to spatially map the photogenerated charge
-    mobility throughout the cross-section of a solar cell. This provides insight into the roll of each layer
-    in the device, and can help with optimization in the designing of new solar cell devices. After
-    one year of my Master's, I transferred into the PhD program. </p>
+  <div class="rsrchdate">
+    <h2><u>September 2020-present</u></h2>
   </div>
 
-  <div>
-    <h2><font color="white"><u>Summer 2019</u></font></h2>
+  <div class="rschpos">
+    <h4><i>PhD at University of Western Ontario.</i></h4>
+  </div>
+  <div class="rschdesc">
+    <p>My PhD research has shifted into synthesis and characterization of carbon based nanomaterials, specifically with applications towards
+    photovoltaic devices. I am specifically interested in large scale deposition techniques of few and single layer carbides, with applications to solar
+    energy. These carbon based materials have received large theoretical interest in recent years, and are predicted to have a variety of electrical
+    properties, ranging from semi-conducting to metallic, both of which can be of use in photovoltaics. I employ a variety of techniques to characterize
+    these materials, primarily scanning probe micrscopy. </p>
   </div>
 
-  <div class="border5">
-    <h4>Research assistant at University of Western Ontario.</h2>
-    <p>Worked on developping the Charge Extraction by Linearly Increasing Voltage (CELIV) experiment. This is a
-      very powerful and easy technique for studying the internal properties of semiconductors, specifically the
-      charge carrier mobility. My interest with this experiment is specifically to study the mobility of photo-induced
-      charge carrier mobility of solar cells. This is done by pulsing a laser onto solar cell, and then applying a
-      linear voltage to pull the newly created free charges out through the electrodes. </p>
+  <div class="rsrchdate">
+    <h2><u>September 2019-September 2020</u></h2>
+  </div>
+
+  <div class="rschpos">
+    <h4><i>Master's at University of Western Ontario.</i></h4>
+  </div>
+  <div class="rschdesc">
+    <p>My MSc work was based around integration of photo-generated charge extraction by linearly increasing voltage (photo-CELIV),
+    a standard single-point current transient technique for determination of bulk charge carrier mobility, into a scanning
+    confocal optical microscope. This allowed us to scan through the active layer of photovoltaiv devices and record extraction
+    transients at every focal plane. A model was developped to analyze this data, based on enhanced nongeminate recombination
+    at the active layer, and construct cross-sectional maps of carrier mobility, an important parameter for characterization of solar cell performance.
+    The obtained maps allowed us to gain deep insight into the role of hydrogen in hydrogenated amorphous silicon (a-Si:H).</p>
+  </div>
+
+  <div class="rsrchdate">
+    <h2><u>Summer 2019</u></h2>
+  </div>
+
+  <div class="rschpos">
+    <h4>Research assistant at University of Western Ontario.</h4>
+  </div>
+  <div class="rschdesc">
+    <p>This summer research assistantship involved work on instrumentation development for photo-generated charge extraction by linearly
+    increasing voltage (photo-CELIV), which is a standard current transient technique for measurement of photo-generated charge carrier
+    mobility in photoolvtaic devices. Carrier mobility is an important parameter for determining the performance of a solar cell, and it
+    is crucial to have well developped and understood methods for measuring it. This work involved extending the measurement circuit to incorporate
+    a low-temperature probe station, cooled by compressed liquid helium, to study carrier mobility down to temperatures below 10 Kelvin.
+    This type of measurement is crucial for probing transport mechanisms in semiconducting devices.  </p>
   </div>
 
 
-<div>
-  <h2><font color="white"><u>September 2018-April 2019</u></font></h2>
-</div>
+  <div class="rsrchdate">
+    <h2><u>September 2018-April 2019</u></h2>
+  </div>
 
-<div class="border4">
-  <h4>Undergraduate honours project in UNB's MRI lab. Supervised by Dr. Ben Newling.</h4>
-  <p>Project involved measuring bulk flow propagators of flowing sample (water)
-     using a modification of the well documented DIFFTRAIN pulse sequence approach.
-     In this work we kept our pulse durations short (on the order of hundreds
-     of microseconds), equal to our recycle time, and constant throughout the measurement.
-     To do this,  a small tip angle (9.5 degrees) was used.
-      We also reorganized the bipolar gradient switches from how
-     they are traditionally applied in order to minimize the amount of work that our gradient
-     coils must do, which will in turn help us ensure we are measuring the centre of k-space on each
-     bipolar gradient switch. One bit of new physics that we are hoping to uncover with this work
-     is a sense of the time development of bulk flow propagators. By increasing the time of our pulse
-     durations we will be able to see this, and are expecting our propagators to change with these
-     pulse durations. This thesis can be viewed (and even downloaded should you desire) by clicking
-     the thesis button below.</p>
-     <button onclick="openPage('HonoursThesis', this, 'powderblue')">
-      Thesis
-     </button>
-</div>
+  <div class="rschpos">
+    <h4>Undergraduate honours project in UNB's MRI lab. Supervised by Dr. Ben Newling.</h4>
+  </div>
+  <div class="rschdesc">
+    <p>My undergraduate honours project involved measuring bulk flow propagators of flowing sample (water)
+       via nuclear magnetic resonance imaging (MRI) using a modification of the well documented DIFFTRAIN pulse sequence approach.
+       Short, constant pulse durations, equal to the gradient recycle time, were used in this study,
+       achieved through the use of a small tip angle.
+       We also reorganized the bipolar gradient switches from how
+       they are traditionally applied in order to minimize the amount of work that the gradient
+       coils must do, which in turn helps to ensure he centre of k-space is measured on each
+       bipolar gradient switch. This allowed the flexibility to vary gradient pulse durations
+       and study how this impacts flow propogator measurements.</p>
+       <button onclick="openPage('HonoursThesis', this)">
+        Thesis
+       </button>
+  </div>
 
-<div>
-  <h2><font color="white"><u>Summer 2018</u></font></h2>
-</div>
+  <div class="rsrchdate">
+    <h2><u>Summer 2018</u></h2>
+  </div>
 
-<div class="border4">
-  <h4>Research assistant in UNB's MRI lab. Supervised by Dr. Ben Newling. </h4>
-  <p>Work included writing code in visual basic on TNMR software to automate calculation of a timing
-     parameter that we have called <i>Time Shift Trim</i> (TST). Due to the unavoidable self inductance in
-     gradient coils, they tend to slightly resist being switched to apply a new value (a necessary function
-     in all MRI experiments). Due to this, our motion encoding gradient does not cross 0 at the exact time
-     that we think it does, and thus we end up inadvertantly applying our radio frequency pulse at the
-     wrong time, and effectively don't measure the centre of k-space. The centre of k-space contains the
-     largest signal of our entire conjugate space and by missing this we lose valuable information about our system.
-     By adding this adjustable TST parameter before our RF pulse we can delay it so that we apply it at the
-     exact right time and measure the things we mean to measure. The one draw back is that the TST parameter
-     can be very tedious and time consuming to determine, and depends on many specific parameters of the
-     experiment being done. Therefore I developped a program to determine and set this time parameter quickly
-     and efficiently, making this process much easier for the experimenter. I then helped with diffusion tensor
-     imaging experiments on turbulent systems in an effort to measure the time scales on which turbulent flow
-     is anisotropic.</p>
-</div>
+  <div class="rschpos">
+    <h4>Research assistant in UNB's MRI lab. Supervised by Dr. Ben Newling. </h4>
+  </div>
+  <div class="rschdesc">
+    <p>This summer research assistantship involved writing code in visual basic on TNMR software to automate calculation of
+       radio-frequency buffer time parameters in nuclear magnetic resonance imaging (MRI). These buffer parameters
+       help to overcome the inherit delay in bipolar gradient switches caused to self inductance within the gradient coils.
+       This delay causes desynchronization of the gradient value with the application of a radio frequency pulse,
+       which must be applied when the magnetic field gradient is exactly 0. Automation of the process of calculation and
+       applying RF-buffer times helps ensure repeatability of the process and vastly decreases the time required. </p>
+  </div>
 
-<div>
-  <h2><font color="white"><u>Summer 2016</u></font></h2>
-</div>
+  <div class="rsrchdate">
+    <h2><u>Summer 2016</u></h2>
+  </div>
 
-<div class="border5">
-  <h4>Research assistant in Biomedical Engineering lab at Dalhousie University.</h2>
-  <p>Work involved mixing bone glue samples made of various polymers in an attempt to find a mixture
-     with the right properties that could be successfully inserted in a broken bone to help speed up healing.
-     In order to do this, I helped assemble equipment to melt and mix different polymers into a sample. These would
-     then be spread on bone samples which would be glued together. Once dried we would test the strength and
-     hydrophobicity of the glue.</p>
-</div>
-
-</center>
+  <div class="rschpos">
+    <h4>Research assistant in Biomedical Engineering lab at Dalhousie University.</h4>
+  </div>
+  <div class="rschdesc">
+    <p>This summer research assistantship involved instrumentation development for synthesis of polymer based bone
+      glues. Sample precursors needed to be sufficiently prepared, melted, and reliably and reproducibly mixed,
+      before being inserted into broken bones to improve healing. My role was in assembling the required instruments
+      for this, and synthesizing the compositions. Once made, a variety of surface characterization techniques were
+      used to determine viability of specific glue compounds.</p>
+  </div>
 </div>
 
 
 <div id="CV" class="tabcontent">
 
-<div>
-  <center>
-  <h3><u><font color="white">Personal Information</u></font></h3>
-  </center>
+<div class="tabtitle">
+  <h1>Curriculum Vitae</h1>
+</div>
+<div class="cvleft">
+
+  <div class="cvgrouptitlefirst">
+  <h2>Contact Information</h2>
+  </div>
+
+<div class="cvgroup">
+  <p class="cventrysing">Email: nstocek@uwo.ca</p>
+  <p class="cventrysing">Office: PAB 317</p>
+  <p class="cventrysing"><a href="https://www.linkedin.com/in/noah-stocek"> LinkedIn</a></p>
 </div>
 
-<center>
-<div class="border1">
-  <center>
-  <p>Birthday: December 7, 1997<br>
-  Email: nstocek@uwo.ca</p>
-</center>
-</div>
-</center>
-
-
-<div>
-  <center>
-  <h3><font color="white"><u>Education</u></font></h3>
-  </center>
+<div class="cvgrouptitle">
+  <h2>Education</h2>
 </div>
 
-<center>
-<div class="border1">
-  <center>
-  <p><b>BSc Physics (Hons)</b><br>
-  University of New Brunswick</p>
-</center>
-</div>
-</center>
-
-<div>
-  <center>
-  <h3><font color="white"><u>Work Experience</u></font></h3>
-  </center>
+<div class="cvgroup">
+  <p class="cventry">BSc Physics (Hons)</p>
+  <p class="cventrysub">University of New Brunswick</p>
 </div>
 
-<center>
-<div class="border2">
-  <center>
-  <p><b>Research Assistant at UWO</b><br>
-  Summer 2019</p>
-
-  <p><b>Research Assistant at UNB</b><br>
-  Summer 2018</p>
-
-  <p><b>Centre coordinator at Science East science museum</b><br>
-  September 2017-April 21018</p>
-
-  <p><b>Research Assistant at Dalhousie University</b><br>
-  Summer 2016</p>
-</center>
-</div>
-</center>
-
-<div>
-  <center>
-  <h3><font color="white"><u>Extracurriculars</u></font></h3>
-  </center>
+<div class="cvgrouptitle">
+  <h2>Work Experience</h2>
 </div>
 
-<center>
-<div class="border3">
-  <center>
-  <p><b>Secretary-Physics and Astronomy Club</b><br>
-    September 2017-April 2018
+<div class="cvgroup">
+  <p class="cventry">Research Assistant at UWO</p>
+  <p class="cventrysub">Summer 2019</p>
 
-    <p><b>President-Physics and Astronomy Club</b><br>
-      September 2018-April 2019</p>
-    </center>
+  <p class="cventry">Research Assistant at UNB</p>
+  <p class="cventrysub">Summer 2018</p>
+
+  <p class="cventry">Centre coordinator at Science East science museum</p>
+  <p class="cventrysub">September 2017-April 2018</p>
+
+  <p class="cventry">Research Assistant at Dalhousie University</p>
+  <p class="cventrysub">Summer 2016</p>
+
 </div>
-</center>
+
+</div>
+<div class="cvright">
+
+<div class="cvgrouptitle">
+  <h2>Experimental skills</h2>
+</div>
+
+<div class="cvgroup">
+  <p class="cventrysing">Atomic Force Microscopy</p>
+  <p class="cventrysing">Scanning Near-field Optical Microscopy</p>
+  <p class="cventrysing">Scanning Tunnelling Microscopy</p>
+  <p class="cventrysing">Scanning Tunnelling Spectroscopy</p>
+  <p class="cventrysing">Ultra High Vacuum Systems</p>
+  <p class="cventrysing">Chemical/Physical Vapour Deposition, Sputtering</p>
+  <p class="cventrysing">Current Transient Measurement Techniques</p>
+</div>
+
+<div class="cvgrouptitle">
+  <h2>Programming</h2>
+</div>
+
+<div class="cvgroup">
+  <p class="cventrysing">Python; Matlab</p>
+  <p class="cventrysing">Bash; VB Script</p>
+  <p class="cventrysing">LabView</p>
+</div>
+
+<div class="cvgrouptitle">
+  <h2>Extracurriculars</h2>
+</div>
+
+<div class="cvgroup">
+  <p class="cventry">Logistics Committee-Science Rendezvous</p>
+  <p class="cventrysub">January 2022-May 2022</p>
+  <p class="cventrysub">University of Western Ontario</p>
+
+  <p class="cventry">President-Physics and Astronomy Club</p>
+  <p class="cventrysub">September 2018-April 2019</p>
+  <p class="cventrysub">University of New Brunswick</p>
+
+  <p class="cventry">Secretary-Physics and Astronomy Club</p>
+  <p class="cventrysub">September 2017-April 2018</p>
+  <p class="cventrysub">University of New Brunswick</p>
+
+</div>
+
+</div>
 
 
 
@@ -359,6 +506,9 @@ function openPage(pageName,elmnt,color) {
 }
 
 document.getElementById("defaultOpen").click();
+
+
+
 </script>
 
 </body>
