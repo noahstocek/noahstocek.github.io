@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     background-color: #4F2683;
     width: 100%;
-    height: 280px;
+    height: 290px;
     padding: 10px;
     position: relative;
 
@@ -83,7 +83,6 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
     display: none;
     padding: 20px 20px;
-    margin-top: 300px
     height: auto;
 }
 
@@ -113,6 +112,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 10px;
 }
 
+.abtfullcont{
+  width: 100%
+  margin: -10px;
+  margin-right: 0px;
+}
+
 .abtright{
   float:right;
   margin: 10px;
@@ -120,7 +125,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wholeabt{
-width:100%;
+  width:100%;
+  margin-bottom: 10px;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.wholeabtbot{
+  width:100%;
+  align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .hometext{
@@ -128,6 +147,14 @@ width:100%;
   width: auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-indent: 25px;
+}
+
+.hometext2{
+  margin-top: -5px;
+  width: auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-indent: 0px;
+  color: #4F2683;
 }
 
 .rsrchdate{
@@ -181,6 +208,7 @@ width:100%;
   margin-top: -15px;
   /*font-weight: bold; */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 
 .cventry{
@@ -232,7 +260,8 @@ width:100%;
   </div>
   <div class="title">
     <h1> Noah Stocek </h1>
-    <h5> PhD candidate, University of Western Ontario </h5>
+    <h4> PhD candidate, University of Western Ontario </h4>
+    <h4> Research Assistant, OCI Vacuum Microengineering </h4>
   </div>
   <div class="titlepic">
     <img src=West_Sci.png style="width:200px;">
@@ -256,27 +285,27 @@ width:100%;
   <h1>Home</h1>
   </div>
 
-<div>
+<div class=clearfix>
 <div class=wholeabt>
   <div class="abtleft"> <font size="4.5">
   <center class="hometext"> <h3> About </h3></center>
   <p class="hometext">I am currently a PhD student in experimental condensed matter physics at the University of Western Ontario under
   the supervision of Dr. Giovanni Fanchini. I completed my Bachelor of Science with honors in physics and a minor
   in mathematics at the University of New Brunswick in 2019. After that I began my Master of Science in physics at the
-  University of Western Ontario, and in September 2020 reclassified into the PhD program. </p>
+  University of Western Ontario, and in September 2020 reclassified into the PhD program. Expected graduation date is August, 2024.</p>
 
-  <center class="hometext"> <h3> Research </h3></center>
-  <p class="hometext"> My research is focused on materials with applications to solar energy. My current interest is specifically in
-  synthesis and characterization of novel carbon based two-dimensional materials with anticipated opto-electronic properties
-  that would be ideal in photovoltaic devices. To improve industrial viability of such materials, I focus on developing
-  reaction chambers specifically designed for large scale deposition of high quality multi-layer and single-layer stacks,
-  that also allow for fine control of deposition parameters.</p>
+  <center class="hometext"> <h3> Research Interests </h3></center>
+  <p class="hometext"> My main research interest is the synthesis and characterization of functional materials, primarily those with applications
+  to photovoltaics. My characterization work deals with studying the dynamics of photogenerated charge carriers, specifically in finding ways to
+  generate spatial maps of their mobility, in all spatial dimensions. This has been achieved by merging <b>photo</b>generated <b>C</b>harge
+  <b>E</b>xtraction by <b>L</b>inearly <b>I</b>ncreasing <b>V</b>oltage (photo-CELIV) apparatus with various microscopies, allowing us to correlate
+  local material properties with the mobility of photo-generated charge carriers. <a href = "https://doi.org/10.1103/PhysRevE.106.015108" target="_blank"> Read about it.</a></p>
 
-  <p class="hometext"> My previous research within condensed matter physics involved current transient measurements for
-  photo-induced charge-carrier mobility determination in photovoltaics. Specifically via photo-induced charge extraction
-  by linearly increasing voltage (photo-CELIV), and extending this single-point measurement into a cross-sectional imaging
-  technique for spatially resolved mobility measurements. This type of measurement will eventually be incorporated into
-  my ongoing research.</p>
+  <p class="hometext"> The synthesis area of my research focuses on novel carbon based nanomaterials, mainly two-dimensional materials. I utilize plasma
+  vapour deposition techniques to work in far-from-equilibrium conditions, which allows us to explore meta-stable configurations, different than those
+  achieved with tradition 2D material synthesis techniques. This approach has led to the deposition of a novel, two-dimensional tungsten semi-carbide
+  (2D-W<sub>2</sub>C), a material with giant <a href = "https://en.wikipedia.org/wiki/Auxetics" target="_blank">auxetic behaviour</a> of intrinsic, atomic
+  origin that had been only theoretically predicted up to this point. <a href="https://doi.org/10.1039/D3MH02193A" target="_blank"> Read about it.</a> </p>
 
   </font>
   </div>
@@ -287,12 +316,20 @@ width:100%;
   </div>
 
   </div>
-</div>
 
 </div>
 
+  <div class=wholeabtbot>
+    <center class="hometext2"> <h1> In The News </h1></center>
+    <center><embed src="https://news.westernu.ca/2024/04/nanomaterial-record/" style="width:1000px; height: 500px;"></center>
+  </div>
+
+  </div>
 
 </div>
+
+</div>
+
 
 
 <div id="Research" class="tabcontent">
@@ -418,7 +455,8 @@ width:100%;
 <div class="cvgroup">
   <p class="cventrysing">Email: nstocek@uwo.ca</p>
   <p class="cventrysing">Office: PAB 317</p>
-  <p class="cventrysing"><a href="https://www.linkedin.com/in/noah-stocek"> LinkedIn</a></p>
+  <p class="cventrysing"><a href="https://www.linkedin.com/in/noah-stocek" target="_blank"> LinkedIn</a></p>
+  <p class="cventrysing"><a href="https://scholar.google.ca/citations?user=F8o0jqgAAAAJ&hl=en&oi=ao" target="_blank"> Google Scholar</a></p>
 </div>
 
 
@@ -427,6 +465,9 @@ width:100%;
 </div>
 
 <div class="cvgroup">
+  <p class="cventry">Research Assistant at OCI Vacuum Microengineering</p>
+  <p class="cventrysub">March 2024-Present </p>
+
   <p class="cventry">Research Assistant at UWO</p>
   <p class="cventrysub">Summer 2019</p>
 
@@ -472,23 +513,10 @@ width:100%;
 </div>
 
 <div class="cvgroup">
-  <p class="cventrysing">Atomic Force Microscopy</p>
-  <p class="cventrysing">Scanning Near-field Optical Microscopy</p>
-  <p class="cventrysing">Scanning Tunnelling Microscopy</p>
-  <p class="cventrysing">Scanning Tunnelling Spectroscopy</p>
-  <p class="cventrysing">Ultra High Vacuum Systems</p>
+  <p class="cventrysing">Atomic Force Microscopy, Scanning Near-field Optical Microscopy</p>
+  <p class="cventrysing">Scanning Tunnelling Microscopy, Scanning Tunnelling Spectroscopy</p>
+  <p class="cventrysing">Ultra High Vacuum Systems, Current Transient Measurement Techniques</p>
   <p class="cventrysing">Chemical/Physical Vapour Deposition, Sputtering</p>
-  <p class="cventrysing">Current Transient Measurement Techniques</p>
-</div>
-
-<div class="cvgrouptitle">
-  <h2>Programming</h2>
-</div>
-
-<div class="cvgroup">
-  <p class="cventrysing">Python; Matlab</p>
-  <p class="cventrysing">Bash; VB Script</p>
-  <p class="cventrysing">LabView</p>
 </div>
 
 <div class="cvgrouptitle">
@@ -496,11 +524,21 @@ width:100%;
 </div>
 
 <div class="cvpub">
+    <a href = "https://doi.org/10.1039/D4SC03292F" target="_blank"> <p class="cventrylnk">Oxidatively-induced C(sp<sup>3</sup>)-C(sp<sup>3</sup>) bond formation at a tucked-in iron(III) complex, 2024</p></a>
+  <a href = "https://doi.org/10.1149/11303.0015ecst" target="_blank"> <p class="cventrylnk">Near-Field Optics and its applications in nanoscale materials: a review, 2024</p></a>
+  <a href = "https://doi.org/10.1039/D3MH02193A" target="_blank"> <p class="cventrylnk">Giant auxetic behavior in remote-plasma synthesized few-layer tungsten semicarbide, 2024</p></a>
   <a href = "https://doi.org/10.1093/biomethods/bpae009" target="_blank"> <p class="cventrylnk">A methodological primer of extracellular vesicles isolation and characterization via different techniques, 2024</p></a>
   <a href = "https://doi.org/10.1103/PhysRevE.106.015108" target="_blank"> <p class="cventrylnk">Cross-sectional profile of photocarrier mobility in thin-film solar cells via multimolecular recombination and charge extraction by linearly increasing voltage (cs-p-CELIV), 2024</p></a>
   <a href = "https://doi.org/10.1103/PhysRevE.106.015108" target="_blank"> <p class="cventrylnk">Diffusion tensor imaging of anisotropic inhomogeneous turbulent flow, 2022</p></a>
 </div>
 
+<div class="cvgrouptitle">
+  <h2>Conferences</h2>
+</div>
+
+<div class="cvpub">
+  <p class="cventrylnk">Giant auxetic behavior in remote-plasma synthesized few-layer tungsten semicarbide, 2024</p>
+</div>
 
 </div>
 
